@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+
+<h:body>
+	<h1>Exercicio 8</h1>
+	<h:form>
+		<fieldset>
+			<legend>Informe A e B</legend>
+			<h:panelGrid columns="2">
+				<h:outputLabel value="A: " for="numA" />
+				<h:inputText id="numA" value="#{calcularBean.numeros.numA}" />
+				<h:outputLabel value="B: " for="numB" />
+				<h:inputText id="numB" value="#{calcularBean.numeros.numB}" />				
+				<h:outputLabel value="C: " for="numC" />
+				<h:inputText id="numC" value="#{calcularBean.numeros.numC}" disabled="true" />
+				<h:commandButton value="Calcular C" action="#{calcularBean.calcular}" />
+				<h:commandButton value="Limpar" action="#{calcularBean.limpar}" />
+			</h:panelGrid>
+		</fieldset>
+	</h:form>
+</h:body>
+</html>
